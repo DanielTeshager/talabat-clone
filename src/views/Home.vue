@@ -185,9 +185,24 @@
               </div>
               <div class="cart-total">
                 <div class="cart-total-item">
-                  <p>
-                    Subtotal
+                  <p class="subtotal">
+                    <span>Subtotal</span>
+                    <span class="price">AED 20.00</span>
                   </p>
+                   <p class="deliveryfee">
+                    <span>Delivery Fee</span>
+                    <span class="price">AED 5.00</span>
+                  </p>
+                   <p class="total">
+                    <span>Total Amount</span>
+                    <span class="price">AED 20.00</span>
+                  </p>
+                
+                  <div class="checkout">
+                       <a href="#" class="btn btn-large-green">
+                    PROCEED TO CHECKOUT
+                  </a>
+                  </div>
                 </div>
               </div>
         </div>
@@ -236,6 +251,10 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+.main-body{
+  background-color: #fff;
+ height: 100vh;
 }
 ul.main-nav{
   display: flex;
@@ -404,6 +423,8 @@ padding: 0 20px;
   border: 1px solid #ccc;
   height: 100%;
   text-align: left;
+  overflow: auto;
+  padding-bottom: 20px;
 }
 .cart .card-header{
  background-color: rgb(255, 90, 0);
@@ -469,5 +490,29 @@ padding: 0 20px;
 }
 .cart-items-content{
   background-color: rgb(250, 250, 250);
+}
+
+/* totals */
+.cart-total-item p{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.subtotal{
+  color: #444;
+  font-weight: 300;
+}
+.total{
+  font-weight: 500;
+}
+.checkout{
+  display: flex;
+}
+.btn-large-green{
+   background: green;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: 81%;
 }
 </style>
